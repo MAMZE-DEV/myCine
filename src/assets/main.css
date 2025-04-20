@@ -1,0 +1,52 @@
+@font-face {
+  font-family:'arialBlack';
+  src: url('/Users/bbuminuchan/Desktop/Cinemahall/cinebook/src/assets/font/arial_black.ttf') format('truetype');
+}
+.header{
+  text-align: center;
+  font-family: arialBlack;
+  font-size:100px;
+}
+#serveHeader{
+  font-family: arialBlack;
+  text-align:center;
+  color:black;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:650px;
+  position:relative;
+}
+.flex div{
+  transition: all 0.5s ease;
+  position: absolute;
+  cursor:pointer;
+}
+.left{
+  transform:translateX(-230px) scale(0.7);
+  z-index:1;
+  filter:blur(2px);
+}
+.center{
+  transform:translateX(0) scale(1.2);
+  z-index: 2;
+}
+.right{
+  transform:translateX(230px) scale(0.7);
+  filter:blur(2px);
+  z-index:1;
+}
+.hidden{
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+  transform: translateX(0) scale(0.5);
+}
+img{
+  background-color:gray;
+  width:200px;
+  height:auto;
+  box-shadow: 0px 10px 20px gray;
+}
